@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+body.modal-open {
+    overflow-y: scroll;
+}
+
+.table>tbody>tr>th, .table>tbody>tr>td {
+    border-top: none;
+}
+.modal-backcolor-content {
+   background-color: #F5F5F5;
+}	
+.modal-backcolor-body {
+   background-color: #FFFFFF;
+}
+
+label.error {
+color:red;
+}
+input.error {
+border:1px solid red;
+}
+input.error {
+border:1px solid red;
+}
+textarea.error {
+border:1px solid red;
+}
+password.error {
+border:1px solid red;
+}
+
+checkboxes.error {
+border:1px solid red;
+}

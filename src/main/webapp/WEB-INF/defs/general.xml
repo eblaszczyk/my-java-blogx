@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+  <definition name="common" template="/WEB-INF/layouts/classic.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+    <!-- <put-attribute name="navbar" value="/WEB-INF/layouts/navbar.jsp" /> -->
+  </definition>
+
+  <definition name="home" extends="common">
+    <put-attribute name="pageTitle" value="My Java BlogX" />
+    <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+    <put-attribute name="current" value="home" />
+  </definition>  
+  
+  <definition name="post_details" extends="common">
+  	<put-attribute name="pageTitle" value="Post" />
+    <put-attribute name="body" value="/WEB-INF/views/post_details.jsp" />
+    <put-attribute name="current" value="category" />
+  </definition> 
+  
+  <definition name="category_details" extends="common">
+    <put-attribute name="pageTitle" value="Kategoria" />
+    <put-attribute name="body" value="/WEB-INF/views/category_details.jsp" />
+    <put-attribute name="current" value="category" />
+  </definition>  
+  
+  
+  <definition name="about" extends="common">
+    <put-attribute name="pageTitle" value="O mnie" />
+    <put-attribute name="body" value="/WEB-INF/views/about.jsp" />
+    <put-attribute name="current" value="about" />
+  </definition>  
+  
+  <definition name="contact" extends="common">
+    <put-attribute name="pageTitle" value="Kontakt" />
+    <put-attribute name="body" value="/WEB-INF/views/contact.jsp" />
+    <put-attribute name="current" value="contact" />
+  </definition>    
+  
+  <definition name="posts" extends="common">
+    <put-attribute name="pageTitle" value="Zarządzanie postami" />
+    <put-attribute name="body" value="/WEB-INF/views/posts.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>   
+  
+  <definition name="logout" extends="common">
+    <put-attribute name="pageTitle" value="Kategoria" />
+    <put-attribute name="body" value="/WEB-INF/views/logaout.jsp" />
+    <put-attribute name="current" value="logout" />
+  </definition>   
+  
+  <definition name="users" extends="common">
+    <put-attribute name="pageTitle" value="Użytkownicy" />
+    <put-attribute name="body" value="/WEB-INF/views/users.jsp" />
+    <put-attribute name="current" value="users" />
+  </definition>   
+  
+  <definition name="categories" extends="common">
+    <put-attribute name="pageTitle" value="Kategorie" />
+    <put-attribute name="body" value="/WEB-INF/views/categories.jsp" />
+    <put-attribute name="current" value="categories" />
+  </definition>     
+  
+   <definition name="change_category" extends="common">
+    <put-attribute name="pageTitle" value="Kategorie" />
+    <put-attribute name="body" value="/WEB-INF/views/change_category.jsp" />
+    <put-attribute name="current" value="categories" />
+  </definition>     
+  
+  <definition name="add_post" extends="common">
+    <put-attribute name="pageTitle" value="Dodaj Post" />
+    <put-attribute name="body" value="/WEB-INF/views/add_post.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>  
+  
+  <definition name="change_post" extends="common">
+    <put-attribute name="pageTitle" value="Edytuj Post" />
+    <put-attribute name="body" value="/WEB-INF/views/change_post.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>  
+  
+  <definition name="post_added" extends="common">
+    <put-attribute name="pageTitle" value="Nowy Post Dodany" />
+    <put-attribute name="body" value="/WEB-INF/views/post_added.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>  
+   
+  <definition name="post_changed" extends="common">
+    <put-attribute name="pageTitle" value="Nowy Post Dodany" />
+    <put-attribute name="body" value="/WEB-INF/views/post_changed.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>    
+   
+  <definition name="view_post" extends="common">
+    <put-attribute name="pageTitle" value="Przeglądaj Posty" />
+    <put-attribute name="body" value="/WEB-INF/views/view_post.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>  
+  
+  <definition name="view_post_error" extends="common">
+    <put-attribute name="pageTitle" value="Brak postu" />
+    <put-attribute name="body" value="/WEB-INF/views/view_post_error.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>  
+  
+  <definition name="view_posts" extends="common">
+    <put-attribute name="pageTitle" value="Przeglądaj Posty" />
+    <put-attribute name="body" value="/WEB-INF/views/view_posts.jsp" />
+    <put-attribute name="current" value="posts" />
+  </definition>
+  
+   <definition name="change_password" extends="common">
+    <put-attribute name="pageTitle" value="Zmiana hasła" />
+    <put-attribute name="body" value="/WEB-INF/views/change_password.jsp" />
+    <put-attribute name="current" value="myaccount" />
+  </definition> 
+  
+   <definition name="password_changed" extends="common">
+    <put-attribute name="pageTitle" value="Hasło zmienione" />
+    <put-attribute name="body" value="/WEB-INF/views/password_changed.jsp" />
+    <put-attribute name="current" value="myaccount" />
+  </definition>  
+  
+   <definition name="view_account" extends="common">
+    <put-attribute name="pageTitle" value="Moje dane" />
+    <put-attribute name="body" value="/WEB-INF/views/view_account.jsp" />
+    <put-attribute name="current" value="myaccount" />
+  </definition> 
+  
+</tiles-definitions>
